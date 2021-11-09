@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<launch>
+  <node name="uvc_camera" pkg="uvc_camera" type="uvc_camera_node" required="true" />
+  <node name="yomiage_transrate_node" pkg="aws_detect_text" type="yomiage_transrate_node.py" required="true" output="screen"/>
+</launch>

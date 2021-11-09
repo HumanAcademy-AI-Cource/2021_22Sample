@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<launch>
+  <include file="$(find omni_robot)/launch/omni_robot_core.launch" />
+  <node name="uvc_camera" pkg="uvc_camera" type="uvc_camera_node" required="true" />
+  <node name="card_reader_node" pkg="aws_detect_text" type="card_reader_node.py" required="true" output="screen"/>
+</launch>
